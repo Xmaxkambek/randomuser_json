@@ -1,5 +1,8 @@
-import 'package:randomuser_json/randomuser_json.dart' as randomuser_json;
+import 'package:randomuser_json/randomuser_json.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${randomuser_json.calculate()}!');
+void main() {
+  // File path
+  final path = 'user_1.json';
+  Map data = getData(path);
+  print(data);
 }
